@@ -1,4 +1,4 @@
-#SACNS (Sistema de Seguimiento Académico de un Colegio de Nivel Secundario)
+# SACNS (Sistema de Seguimiento Académico de un Colegio de Nivel Secundario)
 
 ## Indicaciones estructura de directorios
 
