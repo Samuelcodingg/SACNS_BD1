@@ -8,6 +8,7 @@
     * js: archivos javascript
 
 * includes: componentes reutilizables de front
+* documents: documentacion del proyecto
 
 ## Tecnologías
 
