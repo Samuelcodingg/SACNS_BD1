@@ -1,0 +1,33 @@
+/*general*/
+
+*, body {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/*utilities*/
+
+.min-h-550p {
+    min-height: 550px;
+}
+
+.bg-2nd {
+    background-color: #dceae1;
+}
+
+.bg-1st {
+    background-color: #30bc5c;
+}
+
+.border-sacns-ge {
+    border-color: #30bc5c !important; 
+}
+
+.polygon {
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+}
+
+.fs-6 {
+    font-size: 13px !important;
+}
