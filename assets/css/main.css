@@ -54,6 +54,7 @@ body {
 }
 
 .box-pre-login {
+    min-height: 96px;
     width: 426px;
 }
 
