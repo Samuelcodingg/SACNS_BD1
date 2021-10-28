@@ -9,6 +9,15 @@ body {
     padding: 0px;
 }
 
+input{
+    width: 426px;
+    height: 64px;
+}
+
+/* input[type=submit]  {
+    width: 426px;
+    height: 64px;
+} */
 
 /*utilities*/
 
@@ -22,6 +31,11 @@ body {
 
 .bg-2nd {
     background: rgba(46, 189, 89, 0.1);
+}
+
+.btn-colors {
+    background-color: #48BB78;
+    color: white !important;
 }
 
 .bg-1st {
@@ -40,6 +54,15 @@ body {
     font-size: 13px !important;
 }
 
+.pointer {
+    cursor: pointer;
+}
+
+.label-color {
+    color: #696F79;
+    font-size: 16px;
+}
+
 /*login-page*/
 
 .fst-quote-container {
@@ -56,12 +79,21 @@ body {
 .box-pre-login {
     min-height: 96px;
     width: 426px;
+    transition: all 300ms;
 }
 
 .arrow {
     transition: all 300ms;
 }
 
+.box-pre-login:hover {
+    transform: scale(1.1,1.1);
+}
+
 .box-pre-login:hover .arrow {
     display: block !important;
+}
+
+#containerLoginPageRight {
+    max-width: 500px;
 }
