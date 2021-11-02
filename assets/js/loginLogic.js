@@ -1,5 +1,6 @@
 const btnAlumno = document.getElementById('btnAlumno');
 const btnDocente = document.getElementById('btnDocente');
+const btnAdmin = document.getElementById('btnAdmin');
 const containerBtnRoles = document.getElementById('containerBtnRoles')
 const titleLoginPage = document.getElementById('titleLoginPage');
 const textLoginPage = document.getElementById('textLoginPage');
@@ -12,6 +13,8 @@ document.addEventListener('DOMContentLoaded', () => {
     btnAlumno.addEventListener('click', showLogin);
 
     btnDocente.addEventListener('click', showLogin);
+
+    btnAdmin.addEventListener('click',showLogin);
 
     volver.addEventListener('click', volverAccion);
 })
@@ -27,8 +30,11 @@ const showLogin = (e) => {
     if(idBtn.includes('Alumno')) {
         form.setAttribute('id','formAlumno');
     }
-    else{
+    else if(idBtn.includes('Docente')){
         form.setAttribute('id', 'formDocente');
+    }
+    else {
+        form.setAttribute('id','formAdmin');
     }
 
     showVolver();
