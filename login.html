@@ -52,6 +52,13 @@
             </div>
             <div class="col-md-7 min-h-100vh d-flex align-items-center my-5 my-md-0">
                 <div class="container ">
+                    <div id="volver" class="d-flex align-items-center mb-5 pointer d-none">
+                        <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.8627 2.225L8.37936 0.75L0.137695 9L8.3877 17.25L9.8627 15.775L3.0877 9L9.8627 2.225Z" fill="#8692A6"/>
+                        </svg>
+                
+                        <p class="mb-0 ms-2 text-secondary">Volver</p>
+                    </div>
                     <div class="container mx-lg-5" id="containerLoginPageRight">
                         <div>
                             <h5 class="fw-bold fs-4" id="titleLoginPage">¡Bienvenido!</h5>
@@ -74,7 +81,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div href="#" class="d-block shadow box-pre-login pointer bg-2nd text-decoration-none text-black rounded border-sacns-ge p-2 d-flex align-items-center mt-4 col-lg-10">
+                            <div href="#" id="btnDocente" class="d-block shadow box-pre-login pointer bg-2nd text-decoration-none text-black rounded border-sacns-ge p-2 d-flex align-items-center mt-4 col-lg-10">
                                 <div class="bg-1st p-3 pb-2 ms-2 me-4 polygon">
                                     <i class="fas fa-suitcase fs-5 text-white"></i>
                                 </div>
@@ -108,6 +115,19 @@
                             </div>
                             
                         </div>
+                        <form method="POST" class="d-none formulario">
+                            <div class="mb-4">
+                                <p class="label-color">ID</p>
+                                <input type="text" class="form-control" placeholder="ID" />
+                            </div>
+                            <div class="mb-5">
+                                <p class="label-color">Contraseña*</p>
+                                <input type="password" class="form-control" placeholder="Contraseña" />
+                            </div>
+                            <div class="mt-5">
+                                <input type="submit" class="btn btn-colors d-block w-100" value="INGRESAR" />
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>

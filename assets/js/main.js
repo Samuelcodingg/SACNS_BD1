@@ -1,38 +1,45 @@
 const btnAlumno = document.getElementById('btnAlumno');
+const btnDocente = document.getElementById('btnDocente');
 const containerBtnRoles = document.getElementById('containerBtnRoles')
 const titleLoginPage = document.getElementById('titleLoginPage');
 const textLoginPage = document.getElementById('textLoginPage');
 const containerLoginPageRight = document.getElementById('containerLoginPageRight');
+const volver = document.getElementById('volver');
+const form = document.querySelector('.formulario');
 
 document.addEventListener('DOMContentLoaded', () => {
-    btnAlumno.addEventListener('click', showInitialOptions);
 
+    btnAlumno.addEventListener('click', showLogin);
+
+    btnDocente.addEventListener('click', showLogin);
+
+    volver.addEventListener('click', volverAccion);
 })
 
-const showInitialOptions = () => {
+const showLogin = (e) => {
+    const idBtn = e.currentTarget.id;
     containerBtnRoles.classList.add('d-none');
     titleLoginPage.textContent = 'Iniciar Sesión';
     textLoginPage.textContent = 'Bienvenido, coloque su ID y Contraseña';
 
-    renderLoginForm();
+    form.classList.remove('d-none');
 
+    if(idBtn.includes('Alumno')) {
+        form.setAttribute('id','formAlumno');
+    }
+    else{
+        form.setAttribute('id', 'formDocente');
+    }
+
+    showVolver();
 }
 
-const renderLoginForm = () => {
-    const formLogin = document.createElement('form');
-    const formContent = `
-        <div class="mb-4">
-            <p class="label-color">ID</p>
-            <input type="text" class="form-control" placeholder="ID" />
-        </div>
-        <div class="mb-5">
-            <p class="label-color">Contraseña*</p>
-            <input type="password" class="form-control" placeholder="Contraseña" />
-        </div>
-        <div class="mt-5">
-            <input type="submit" class="btn btn-colors d-block w-100" value="INGRESAR" />
-        </div>
-    `
-    formLogin.innerHTML = formContent;
-    containerLoginPageRight.appendChild(formLogin);
+const showVolver = () => {
+    volver.classList.remove('d-none');
+}
+
+const volverAccion = () => {
+    form.classList.add('d-none');
+    volver.classList.add('d-none');
+    containerBtnRoles.classList.remove('d-none');
 }
