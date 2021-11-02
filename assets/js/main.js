@@ -12,6 +12,8 @@ document.addEventListener('DOMContentLoaded', () => {
     btnAlumno.addEventListener('click', showLogin);
 
     btnDocente.addEventListener('click', showLogin);
+
+    volver.addEventListener('click', volverAccion);
 })
 
 const showLogin = (e) => {
@@ -34,4 +36,10 @@ const showLogin = (e) => {
 
 const showVolver = () => {
     volver.classList.remove('d-none');
+}
+
+const volverAccion = () => {
+    form.classList.add('d-none');
+    volver.classList.add('d-none');
+    containerBtnRoles.classList.remove('d-none');
 }
