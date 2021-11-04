@@ -9,15 +9,10 @@ body {
     padding: 0px;
 }
 
-input{
-    width: 426px;
-    height: 64px;
+input, select{
+    width: 426px ;
+    height: 64px !important;
 }
-
-/* input[type=submit]  {
-    width: 426px;
-    height: 64px;
-} */
 
 /*utilities*/
 
@@ -61,6 +56,10 @@ input{
 .label-color {
     color: #696F79;
     font-size: 16px;
+}
+
+.fs-7 {
+    font-size: 8px !important;
 }
 
 /*login-page*/
