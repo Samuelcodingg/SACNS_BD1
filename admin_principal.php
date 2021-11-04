@@ -40,15 +40,22 @@
 
                 
             </div>
-            <div class="col-md-7 min-h-100vh d-flex align-items-center my-5 my-md-0">
-                <div class="container ">
-                    <div id="volver" class="d-flex align-items-center mb-5 pointer d-none">
-                        <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M9.8627 2.225L8.37936 0.75L0.137695 9L8.3877 17.25L9.8627 15.775L3.0877 9L9.8627 2.225Z" fill="#8692A6"/>
-                        </svg>
-                
-                        <p class="mb-0 ms-2 text-secondary">Volver</p>
+            <div class="col-md-7 min-h-100vh d-flex align-items-center">
+                <div class="container py-5">
+                    <div class="d-flex justify-content-between align-self-start align-items-center ">
+                        <div id="cerrarSesion" class="d-flex align-items-center mb-5 pointer">
+                            <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.8627 2.225L8.37936 0.75L0.137695 9L8.3877 17.25L9.8627 15.775L3.0877 9L9.8627 2.225Z" fill="#8692A6"/>
+                            </svg>
+                    
+                            <p class="mb-0 ms-2 text-secondary">Cerrar Sesión</p>
+                        </div>
+                        <div class="d-flex flex-column justify-content-end mb-5 me-lg-5">
+                            <p style="font-size: 13px; color: #bdbdbd;" class="mb-0 me-lg-5">Cuenta Administrativa</p>
+                            <p class="text-secondary mb-0 text-end me-lg-5">Menu Principal</p>
+                        </div>
                     </div>
+                    
                     <div class="container mx-lg-5" id="containerLoginPageRight">
                         <div>
                             <h5 class="fw-bold fs-4" id="titleLoginPage">¡Bienvenido, Administrador!</h5>
@@ -89,16 +96,29 @@
                             </div>
                         </div>
                         <form method="POST" class="d-none formulario">
-                            <div class="mb-4">
-                                <p class="label-color">ID</p>
-                                <input type="text" class="form-control" placeholder="ID" />
+                            <div class="mb-1">
+                                <p class="label-color mb-1">Nombres*</p>
+                                <input type="text" class="form-control" placeholder="Nombres" />
                             </div>
-                            <div class="mb-5">
-                                <p class="label-color">Contraseña*</p>
-                                <input type="password" class="form-control" placeholder="Contraseña" />
+                            <div class="mb-1">
+                                <p class="label-color mb-1">Contraseña*</p>
+                                <input type="text" class="form-control" placeholder="Apellidos" />
                             </div>
+                            <div class="mb-1">
+                                <p class="label-color mb-1">DNI*</p>
+                                <input type="text" class="form-control" placeholder="DNI" />
+                            </div>
+                            <div class="mb-1">
+                                <p class="label-color mb-1">Tipo de usuario*</p>
+                                <select class="form-select select text-secondary">
+                                    <option>Seleccione</option>
+                                    <option>Alumno</option>
+                                    <option>Docente</option>
+                                </select>
+                            </div>
+
                             <div class="mt-5">
-                                <input type="submit" class="btn btn-colors d-block w-100" value="INGRESAR" />
+                                <input type="submit" class="btn btn-colors d-block w-100" value="SIGUIENTE" />
                             </div>
                         </form>
                     </div>
@@ -107,5 +127,5 @@
         </div>
     </main>
 
-
+    <script src="assets/js/adminLogic.js"></script>
 <?php include 'includes/footer.php' ?>
