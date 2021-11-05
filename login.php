@@ -107,14 +107,14 @@
                         <form method="POST" class="d-none formulario">
                             <div class="mb-4">
                                 <p class="label-color">ID</p>
-                                <input type="text" class="form-control" placeholder="ID" />
+                                <input type="text" class="form-control" placeholder="ID" id="id"/>
                             </div>
                             <div class="mb-5">
                                 <p class="label-color">Contraseña*</p>
-                                <input type="password" class="form-control" placeholder="Contraseña" />
+                                <input type="password" class="form-control" placeholder="Contraseña" id="password" />
                             </div>
                             <div class="mt-5">
-                                <input type="submit" class="btn btn-colors d-block w-100" value="INGRESAR" />
+                                <input type="submit" class="btn btn-colors d-block w-100" value="INGRESAR" id="btnIngresar"/>
                             </div>
                         </form>
                     </div>
@@ -124,5 +124,5 @@
     </main>
 
     
-    <script src="assets/js/loginLogic.js"></script>
+    <script src="assets/js/loginLogic.js?v=<?php echo time(); ?>"></script>
 <?php include 'includes/footer.php' ?>

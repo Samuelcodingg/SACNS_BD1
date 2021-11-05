@@ -7,6 +7,9 @@ const textLoginPage = document.getElementById('textLoginPage');
 const containerLoginPageRight = document.getElementById('containerLoginPageRight');
 const volver = document.getElementById('volver');
 const form = document.querySelector('.formulario');
+const id = document.getElementById('id');
+const password = document.getElementById('password');
+const btnIngresar = document.getElementById('btnIngresar');
 
 document.addEventListener('DOMContentLoaded', () => {
 
@@ -17,6 +20,8 @@ document.addEventListener('DOMContentLoaded', () => {
     btnAdmin.addEventListener('click',showLogin);
 
     volver.addEventListener('click', volverAccion);
+
+    btnIngresar.addEventListener('click', validateForm);
 })
 
 const showLogin = (e) => {
@@ -49,3 +54,34 @@ const volverAccion = () => {
     volver.classList.add('d-none');
     containerBtnRoles.classList.remove('d-none');
 }
+
+const validateForm = (e) => {
+    e.preventDefault();
+    const idValue = id.value;
+    const passwordValue = password.value;
+    
+    if(idValue === '' || passwordValue === '') {
+        swal.fire({
+            title: 'Error',
+            text: 'Debe completar todos los campos',
+            icon: 'error',
+            confirmButtonText: 'Aceptar',
+            confirmButtonColor: '#48BB78'
+        })
+        return;
+    }
+
+    if(!idValue.match(/^[0-9]+$/)) {
+        swal.fire({
+            title: 'Error',
+            text: 'El ID debe ser un número',
+            icon: 'error',
+            confirmButtonText: 'Aceptar',
+            confirmButtonColor: '#48BB78'
+        })
+        return;
+    }
+
+    form.submit();
+}
+
