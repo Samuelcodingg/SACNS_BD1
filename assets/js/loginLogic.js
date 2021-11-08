@@ -9,6 +9,7 @@ const volver = document.getElementById('volver');
 const form = document.querySelector('.formulario');
 const id = document.getElementById('id');
 const password = document.getElementById('password');
+const frmname = document.getElementById('frmname');
 const btnIngresar = document.getElementById('btnIngresar');
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -34,12 +35,15 @@ const showLogin = (e) => {
 
     if(idBtn.includes('Alumno')) {
         form.setAttribute('id','formAlumno');
+        frmname.setAttribute('value', 'padre');
     }
     else if(idBtn.includes('Docente')){
         form.setAttribute('id', 'formDocente');
+        frmname.setAttribute('value', 'docente');
     }
     else {
-        form.setAttribute('id','formAdmin');
+        form.setAttribute('value','formAdmin');
+        frmname.setAttribute('value', 'administrador');
     }
 
     showVolver();

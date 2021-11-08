@@ -104,14 +104,15 @@
                             </div>
                             
                         </div>
-                        <form method="POST" class="d-none formulario">
+                        <form method="POST" class="d-none formulario" action="src/autenticacion.php">
+                            <input type="hidden" name="frmname" id="frmname" value=""/>
                             <div class="mb-4">
                                 <p class="label-color">ID</p>
-                                <input type="text" class="form-control" placeholder="ID" id="id"/>
+                                <input type="text" class="form-control" placeholder="ID" id="id" name="id"/>
                             </div>
                             <div class="mb-5">
                                 <p class="label-color">Contraseña*</p>
-                                <input type="password" class="form-control" placeholder="Contraseña" id="password" />
+                                <input type="password" class="form-control" placeholder="Contraseña" id="password" name="password" />
                             </div>
                             <div class="mt-5">
                                 <input type="submit" class="btn btn-colors d-block w-100" value="INGRESAR" id="btnIngresar"/>
