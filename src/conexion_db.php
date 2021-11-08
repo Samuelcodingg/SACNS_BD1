@@ -1,13 +1,9 @@
 <?php
+    include '../config.php';
+    
+    $conexion = mysqli_connect($servidor, $usuario, $password, $basedatos);
 
-define('DB_SERVER', 'localhost');
-define('DB_USERNAME', 'root');
-define('DB_PASSWORD', '');
-define('DB_NAME', 'demo');
- 
-$link = mysqli_connect(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_NAME);
- 
-if($link === false){
-    die("ERROR: Could not connect. " . mysqli_connect_error());
-}
+    if ($conexion->connect_error) {
+        die("Error en la conexión: " . $conexion->connect_error);
+    }
 ?>

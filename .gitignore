@@ -1,0 +1,7 @@
+# Archivo para configuraciones
+config.php
+# Especifica las tuyas de esta forma
+# $servidor = <tu servidor>;
+#  $usuario = <tu usuario>;
+#  $password = <tu contraseña>;
+#  $basedatos = <tu base de datos>;
