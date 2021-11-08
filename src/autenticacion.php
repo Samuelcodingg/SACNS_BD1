@@ -21,14 +21,8 @@
 
     if($count == 1){
         session_start();
-        $_SESSION['id'] = $row['padre_id'];
-        $_SESSION['rol'] = $frmname;
-        $_SESSION['usuario'] = $row['usuario'];
-        $_SESSION['nombres'] = $row['nombres'];
-        $_SESSION['apellidos'] = $row['apellidos'];
-        $_SESSION['alum_id'] = $row['alum_id'];
-        $_SESSION['email'] = $row['email'];
-        $_SESSION['celular'] = $row['celular'];
+        $_SESSION['datos_usuario'] = $row;
+        $_SESSION['role'] = $frmname;
         header("location: ../index.php");
     }else{
         header("location: ../login.php?error=1");
