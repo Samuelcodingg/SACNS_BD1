@@ -31,7 +31,7 @@
         $_SESSION['celular'] = $row['celular'];
         header("location: ../index.php");
     }else{
-        header("location: ../login.php");
+        header("location: ../login.php?error=1");
     }
 
 ?>

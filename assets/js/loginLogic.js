@@ -11,8 +11,13 @@ const id = document.getElementById('id');
 const password = document.getElementById('password');
 const frmname = document.getElementById('frmname');
 const btnIngresar = document.getElementById('btnIngresar');
+const urlParams = new URLSearchParams(window.location.search);
 
 document.addEventListener('DOMContentLoaded', () => {
+
+    if(urlParams.get('error') == '1') {
+        showError('El ID o la contraseña son incorrectos');
+    }
 
     btnAlumno.addEventListener('click', showLogin);
 
@@ -24,6 +29,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
     btnIngresar.addEventListener('click', validateForm);
 })
+
+const showError = (error) => {
+    swal.fire({
+        title: 'Error',
+        text: error,
+        icon: 'error',
+        confirmButtonText: 'Aceptar',
+        confirmButtonColor: '#48BB78'
+    })
+}
 
 const showLogin = (e) => {
     const idBtn = e.currentTarget.id;
