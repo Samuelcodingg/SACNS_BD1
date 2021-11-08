@@ -1,6 +1,16 @@
 <?php include 'includes/header.php' ?>
 
 <main>
+
+        <?php
+            session_start();
+
+            if(!isset($_SESSION['datos_usuario']) || !$_SESSION['role']=='admin') {
+                header("Location: login.php");
+            }
+        
+        ?>
+
         <div class="row">
             <div class="col-md-5 p-5 fst-quote-container text-white min-h-100vh">
 
@@ -48,7 +58,7 @@
                                 <path d="M9.8627 2.225L8.37936 0.75L0.137695 9L8.3877 17.25L9.8627 15.775L3.0877 9L9.8627 2.225Z" fill="#8692A6"/>
                             </svg>
                     
-                            <p class="mb-0 ms-2 text-secondary">Cerrar Sesión</p>
+                            <a href="src/cerrar_sesion.php" class="mb-0 ms-2 text-secondary ">Cerrar Sesión</a>
                         </div>
                         <div class="d-flex flex-column justify-content-end mb-5 me-lg-5">
                             <p style="font-size: 13px; color: #bdbdbd;" class="mb-0 me-lg-5">Cuenta Administrativa</p>

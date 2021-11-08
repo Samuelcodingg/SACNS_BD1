@@ -10,11 +10,25 @@
     <h1>Autenticación ok</h1>
     <?php 
         session_start();
-        if(isset($_SESSION['usuario'])){
-            echo "Bienvenido ".$_SESSION['usuario'];
-        }else{
-            echo "No estas autenticado";
+
+        if(isset($_SESSION['datos_usuario'])) {
+            if($_SESSION['role'] == 'padre'){
+                echo "Bienvenido padre ".$_SESSION['datos_usuario']['nombres'];
+            }
+            else if($_SESSION['role'] == 'alumno'){
+                echo "Bienvenido alumno ".$_SESSION['datos_usuario']['nombres'];
+            }
+            else if($_SESSION['role']=='administrador'){
+                header('Location: admin_principal.php');
+            }
         }
+        else {
+            header("location: login.php");
+        }
+
+       
     ?>
+
+    <a href="src/cerrar_sesion.php">cerrar sesion</a>
 </body>
 </html>
