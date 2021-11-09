@@ -60,9 +60,16 @@
                     
                             <a href="src/cerrar_sesion.php" class="mb-0 ms-2 text-secondary ">Cerrar Sesión</a>
                         </div>
+                        <div id="volver" class="d-flex align-items-center mb-5 pointer d-none">
+                            <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.8627 2.225L8.37936 0.75L0.137695 9L8.3877 17.25L9.8627 15.775L3.0877 9L9.8627 2.225Z" fill="#8692A6"/>
+                            </svg>
+                    
+                            <p class="mb-0 ms-2 text-secondary">Volver</p>
+                        </div>
                         <div class="d-flex flex-column justify-content-end mb-5 me-lg-5">
                             <p style="font-size: 13px; color: #bdbdbd;" class="mb-0 me-lg-5">Cuenta Administrativa</p>
-                            <p class="text-secondary mb-0 text-end me-lg-5">Menu Principal</p>
+                            <p class="text-secondary mb-0 text-end me-lg-5" id="titlePhase">Menu Principal</p>
                         </div>
                     </div>
                     
@@ -111,7 +118,7 @@
                                 <input type="text" class="form-control" placeholder="Nombres" />
                             </div>
                             <div class="mb-1">
-                                <p class="label-color mb-1">Contraseña*</p>
+                                <p class="label-color mb-1">Apellidos*</p>
                                 <input type="text" class="form-control" placeholder="Apellidos" />
                             </div>
                             <div class="mb-1">
@@ -128,7 +135,8 @@
                             </div>
 
                             <div class="mt-5">
-                                <input type="submit" class="btn btn-colors d-block w-100" value="SIGUIENTE" />
+                                <button class="btn btn-colors d-block w-100">SIGUIENTE</button>
+                                <input type="submit" class="btn btn-colors d-block w-100 d-none" value="REGISTRAR" />
                             </div>
                         </form>
                     </div>
@@ -137,5 +145,5 @@
         </div>
     </main>
 
-    <script src="assets/js/adminLogic.js"></script>
+    <script src="assets/js/adminLogic.js?v=<?php echo time(); ?>"></script>
 <?php include 'includes/footer.php' ?>

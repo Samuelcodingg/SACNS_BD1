@@ -1,5 +1,13 @@
 <?php include 'includes/header.php' ?>
 
+    <?php
+        session_start();
+
+        if(isset($_SESSION['datos_usuario'])) {
+            header('Location: index.php');
+        }
+    ?>
+
     <main>
         <div class="row">
             <div class="col-md-5 p-5 fst-quote-container text-white min-h-100vh">
