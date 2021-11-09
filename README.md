@@ -9,6 +9,8 @@
 
 * includes: componentes reutilizables de front
 * documents: documentacion del proyecto
+* db: archivos relacionados a la base de datos
+* src: lógica del backend
 
 ## Tecnologías
 
