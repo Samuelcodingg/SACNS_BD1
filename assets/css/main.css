@@ -9,7 +9,7 @@ body {
     padding: 0px;
 }
 
-input, select{
+input, select, button{
     width: 426px ;
     height: 64px !important;
 }
