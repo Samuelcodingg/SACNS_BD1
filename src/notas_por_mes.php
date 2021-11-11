@@ -1,5 +1,10 @@
 <?php
     include("src/conexion_db.php");
+
+    if(!isset($_GET['id'])) {
+        header("Location: index.php");
+    }
+
     $id_asignatura = $_GET['id'];
     $consulta = "SELECT * FROM asignatura WHERE asignatura_id = $id_asignatura";
     $datosCurso = mysqli_query($conexion, $consulta);
