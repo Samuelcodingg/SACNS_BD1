@@ -116,7 +116,7 @@
                                                         <span class="user-subhead">Marzo</span>
                                                     </td>
                                                     <td class="text-left" style="width: 40%;" >
-                                                        <span class="label label-default">Actualizado</span>
+                                                        <span class="label label-default"><?php echo $estadosTrimestres[0] ?></span>
                                                     </td>
                                                     <td style="width:20%;">
                                                         <a href="#" class="table-link text-info">
@@ -134,7 +134,7 @@
                                                         <span class="user-subhead">Abril</span>
                                                     </td>
                                                     <td class="text-left">
-                                                        <span class="label label-default">En Progreso</span>
+                                                        <span class="label label-default"><?php echo $estadosTrimestres[0] ?></span>
                                                     </td>
                                                     <td style="width: 20%;">
                                                         <a href="#" class="table-link text-info">
@@ -151,7 +151,7 @@
                                                         <span class="user-subhead">Mayo</span>
                                                     </td>
                                                     <td class="text-left">
-                                                        <span class="label label-default">Pendiente</span>
+                                                        <span class="label label-default"><?php echo $estadosTrimestres[0] ?></span>
                                                     </td>
                                                     <td style="width: 20%;">
                                                         <a href="#" class="table-link text-info">
@@ -169,7 +169,7 @@
                                                         <span class="user-subhead">Junio</span>
                                                     </td>
                                                     <td class="text-left">
-                                                        <span class="label label-default">En Progreso</span>
+                                                        <span class="label label-default"><?php echo $estadosTrimestres[0] ?></span>
                                                     </td>
                                                     <td style="width: 20%;">
                                                         <a href="#" class="table-link text-info">
@@ -186,7 +186,7 @@
                                                         <span class="user-subhead">Julio</span>
                                                     </td>
                                                     <td class="text-left">
-                                                        <span class="label label-default">Pendiente</span>
+                                                        <span class="label label-default"> <?php echo $estadosTrimestres[1] ?> </span>
                                                     </td>
                                                     <td style="width: 20%;">
                                                         <a href="#" class="table-link text-info">
@@ -204,7 +204,7 @@
                                                         <span class="user-subhead">Agosto</span>
                                                     </td>
                                                     <td class="text-left">
-                                                        <span class="label label-default">En Progreso</span>
+                                                        <span class="label label-default"> <?php echo $estadosTrimestres[1] ?> </span>
                                                     </td>
                                                     <td style="width: 20%;">
                                                         <a href="#" class="table-link text-info">
@@ -221,7 +221,7 @@
                                                         <span class="user-subhead">Setiembre</span>
                                                     </td>
                                                     <td class="text-left">
-                                                        <span class="label label-default">Pendiente</span>
+                                                        <span class="label label-default"> <?php echo $estadosTrimestres[1] ?> </span>
                                                     </td>
                                                     <td style="width: 20%;">
                                                         <a href="#" class="table-link text-info">
@@ -239,7 +239,7 @@
                                                         <span class="user-subhead">Octubre</span>
                                                     </td>
                                                     <td class="text-left">
-                                                        <span class="label label-default">En Progreso</span>
+                                                        <span class="label label-default"> <?php echo $estadosTrimestres[2] ?> </span>
                                                     </td>
                                                     <td style="width: 20%;">
                                                         <a href="#" class="table-link text-info">
@@ -256,7 +256,7 @@
                                                         <span class="user-subhead">Noviembre</span>
                                                     </td>
                                                     <td class="text-left">
-                                                        <span class="label label-default">Pendiente</span>
+                                                        <span class="label label-default"> <?php echo $estadosTrimestres[2] ?> </span>
                                                     </td>
                                                     <td style="width: 20%;">
                                                         <a href="#" class="table-link text-info">
@@ -273,7 +273,7 @@
                                                         <span class="user-subhead">Diciembre</span>
                                                     </td>
                                                     <td class="text-left">
-                                                        <span class="label label-default">Pendiente</span>
+                                                        <span class="label label-default"> <?php echo $estadosTrimestres[2] ?> </span>
                                                     </td>
                                                     <td style="width: 20%;">
                                                         <a href="#" class="table-link text-info">
