@@ -1,5 +1,5 @@
 <?php
-    require_once('config.php');
+    require_once(__DIR__.'\..\config\config.php');
 
     $conexion = mysqli_connect($servidor, $usuario, $password, $basedatos);
     mysqli_query($conexion,"SET NAMES 'utf8'");
