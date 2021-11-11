@@ -14,7 +14,7 @@
 * config: archivos de configuración
 
 ## Nota
-En la carpeta config, crear el archivo de configuración con las siguientes variables:
+En la carpeta config, crear el archivo de configuración con las siguientes variables:  
 ` $servidor = <nombre_servidor> `  
 ` $usuario = <nombre_usuario> `  
 ` $password = <contraseña> `  
