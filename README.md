@@ -11,6 +11,14 @@
 * documents: documentacion del proyecto
 * db: archivos relacionados a la base de datos
 * src: lógica del backend
+* config: archivos de configuración
+
+## Nota
+En la carpeta config, crear el archivo de configuración con las siguientes variables:
+` $servidor = <nombre_servidor> `  
+` $usuario = <nombre_usuario> `  
+` $password = <contraseña> `  
+` $basedatos = <nombre_base_datos> `
 
 ## Tecnologías
 
