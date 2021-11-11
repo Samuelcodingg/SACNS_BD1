@@ -12,8 +12,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     
-    <link rel="stylesheet" href="sidebar.css">
-    <link href="notas por mes.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/sidebar.css">
+    <link href="assets/css/docente_notas.css" rel="stylesheet">
 
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
@@ -21,6 +21,11 @@
 
 
 <body>
+
+    <?php
+        include('src/notas_por_mes.php');
+    ?>
+
     <div class="sidebar">
         <div class="logo-details">
             <div id="logoprin" class='bx bxs-graduation icon' color="blue"></div>
@@ -93,9 +98,9 @@
                     <div class="main-box no-header clearfix">
                         <div class="main-box-body clearfix">
                             <div class="table-responsive">
-                                <h1>Notas del Curso:'Curso'</h1>
+                                <h1>Notas del Curso: <?php echo $curso['nombre'] ?> </h1>
                                 <h2>Grado:</h2>
-                                <h3><img src="https://img.icons8.com/color/48/000000/check-all--v1.png"/>'Grado'</h3>
+                                <h3><img src="https://img.icons8.com/color/48/000000/check-all--v1.png"/> <?php echo $grado ?> </h3>
                                         <table class="table user-list">
                                             <thead>
                                                 <tr>
@@ -291,7 +296,7 @@
 
 
 
-        <script src="sidebar.js"></script>
+        <script src="assets/js/sidebar.js"></script>
 </body>
 
    
