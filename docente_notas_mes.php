@@ -114,25 +114,28 @@
                                             <tbody>
                                                 <?php  
                                                     while($alumnos = mysqli_fetch_assoc($resultado_alumnos)){
+                                                            $consulta = "SELECT * FROM nota WHERE alum_id = ".$alumnos['alum_id']." AND trimestre = $trimestre";
+                                                            $resultado_notas = mysqli_query($conexion, $consulta);
+                                                            $notas = mysqli_fetch_assoc($resultado_notas);
                                                         ?>
                                                             <tr>
                                                                 <td>                                                     
                                                                     <span class="user-subhead"> <?php echo $alumnos['apellidos'].', '.$alumnos['nombres'] ?> </span>
                                                                 </td>
                                                                 <td class="text-center"; >
-                                                                    <span class="label label-default">11</span>
+                                                                    <span class="label label-default"><?php echo $notas['nota'] ?></span>
                                                                 </td>
                                                                 <td class="text-center" >
-                                                                    <span class="label label-default">11</span>
+                                                                    <span class="label label-default"><?php echo $notas['nota'] ?></span>
                                                                 </td>
                                                                 <td class="text-center">
-                                                                    <span class="label label-default">11</span>
+                                                                    <span class="label label-default"><?php echo $notas['nota'] ?></span>
                                                                 </td>
                                                                 <td class="text-center">
-                                                                    <span class="label label-default">11</span>
+                                                                    <span class="label label-default"><?php echo $notas['nota'] ?></span>
                                                                 </td>
                                                                 <td class="text-center" style="width:20%;">
-                                                                    <span class="label label-default">11</span>
+                                                                    <span class="label label-default"><?php echo $notas['nota'] ?></span>
                                                                 </td>
                                                                 <td >
                                                                     <a href="htt://sitioweb.com/a"><button class="btn btn-info" style="background: #4FD1C5; color: #FFFFFF;">Grabar</button></a>
