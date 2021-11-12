@@ -73,6 +73,11 @@ a {
     font-weight: 300;
     
 }
+
+.th-nota {
+    width: 10% !important;
+}
+
 .table tbody tr td {
     font-size: 0.875em;
     vertical-align: middle;

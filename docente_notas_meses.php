@@ -23,7 +23,7 @@
 <body>
 
     <?php
-        include('src/notas_por_mes.php');
+        include('src/estados_notas_por_mes.php');
     ?>
 
     <div class="sidebar">
