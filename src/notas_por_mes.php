@@ -83,7 +83,7 @@
         $trimestre = '3';
     }
 
-    $consulta = "SELECT * FROM alumno WHERE alum_id IN (SELECT alum_id FROM asignatura_alumno WHERE asignatura_id = $id_curso)";
+    $consulta = "SELECT * FROM alumno WHERE nivel_id IN (SELECT nivel_id FROM asignatura WHERE asignatura_id = $id_curso)";
     $resultado_alumnos = mysqli_query($conexion, $consulta);
 
 
