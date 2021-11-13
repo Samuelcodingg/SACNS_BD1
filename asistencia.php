@@ -5,36 +5,18 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Observaciones</title>
+	<title>Asistencia</title>
   <link rel="shortcut icon" href="..\Imagenes\logo.png" type="image/x-icon">
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link href="P1.Observaciones.css" rel="stylesheet">
-    <link rel="stylesheet" href="..\0. SideBar\sidebar.css">
-    
-    <style type="text/css">
-        .btn {
-            display       : inline-block;
-            font-size     : 1rem;
-            padding       : .0.5rem;
-        }
-        .btn:hover {
-            cursor: pointer;
-        }
-        .custom-btn {
-            font-family : monospace;
-            margin      : 0.5rem;
-            padding-top : .0.5rem;
-        }
-        .vertical {
-            transform: rotate(-90deg);
-        }
-    </style>
+  <link href="assets/css/asistencia.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/sidebar.css">
+
 </head>
   <body>
     <div class="sidebar">
       <div class="logo-details">
-          <div id="logoprin" class='bx bxs-graduation icon' color="blue"></div>
+          <div id="logoprin" class='bx bxs-graduation icon' color="blue"></div> 
           <div class="logo_name">E. SAN MARCOS</div>
           <i class='bx bx-menu' id="btn"></i>
       </div>
@@ -97,18 +79,14 @@
       </ul>
   </div>
    
-    <div class="container mt-5 ml-5 p-5">
+    <div class="container p-5 mt-4 ">
       <div class="container-fluid p-0">
-      <h1 class="h3">Observaciones de Salones a cargo</h1>
+      <h1 class="h3">Asistencia de Salones a Cargo</h1>
       <div class="row">
         <div class="col-xl-8">
           <div class="card">
             <div class="card-header pb-0">
-              <div class="card-actions float-right">
-                
-              </div>
               <h4 class="subtext">Grado :</h4>
-
               <h6 class="sub2"><img src="../Imagenes/chack.png" width="30" height="30" class="rounded-circle my-n1" alt="Avatar"> Numero de Cursos</h6>
             </div>
             <div class="card-body">
@@ -117,77 +95,101 @@
                   <tr>
                     <th>#</th>
                     <th>Curso</th>
-                    <th>Grado</th>
+                    <th>Docente</th>
                     <th>Estado</th>
-                    <th> </th>
+                    <th>Ingresar</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr id="lol">
-                    <td><img src="../Imagenes/mate.jpg" width="32" height="32" class="rounded-circle my-n1" alt="Avatar"></td>
-                    <td>Matematica</td>
-                    <td>6to Grado</td>
-                    <td><div class="progress" style="height: 3px;">
-                      <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>25%</td>
-                    <td> <div class="btn custom-btn vertical">
-                        ...
-                    </div></td>
-                  </tr>
                   <tr>
                     <td><img src="../Imagenes/mate.jpg" width="32" height="32" class="rounded-circle my-n1" alt="Avatar"></td>
                     <td>Matematica</td>
-                    <td>5to Grado</td>
+                    <td>Grado</td>
                     <td><div class="progress" style="height: 3px;">
                       <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>25%</td>
-                    <td> <div class="btn custom-btn vertical">
-                        ...
-                    </div></td>
+                    <td><button type="button" class="btn btn-primary btn-sm">Registrar</button></td>
                   </tr>
                   <tr>
-                    <td><img src="../Imagenes/mate.jpg" width="32" height="32" class="rounded-circle my-n1" alt="Avatar"></td>
-                    <td>Matematica</td>
-                    <td>4to Grado</td>
+                    <td><img src="../Imagenes/lengu.png" width="32" height="32" class="rounded-circle my-n1" alt="Avatar"></td>
+                    <td>Lenguaje</td>
+                    <td>Grado</td>
                     <td><div class="progress" style="height: 3px;">
                       <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>25%</td>
-                    <td> <div class="btn custom-btn vertical">
-                        ...
-                    </div></td>
+                    <td><button type="button" class="btn btn-primary btn-sm">Registrar</button></td>
                   </tr>
                   <tr>
-                    <td><img src="../Imagenes/mate.jpg" width="32" height="32" class="rounded-circle my-n1" alt="Avatar"></td>
-                    <td>Matematica</td>
-                    <td>3to Grado</td>
+                    <td><img src="../Imagenes/quimica.jpg" width="32" height="32" class="rounded-circle my-n1" alt="Avatar"></td>
+                    <td> Quimica </td>
+                    <td>Grado</td>
                     <td><div class="progress" style="height: 3px;">
                       <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>25%</td>
-                    <td> <div class="btn custom-btn vertical">
-                        ...
-                    </div></td>
+                    <td><button type="button" class="btn btn-primary btn-sm">Registrar</button></td>
                   </tr>
                   <tr>
-                    <td><img src="../Imagenes/mate.jpg" width="32" height="32" class="rounded-circle my-n1" alt="Avatar"></td>
-                    <td>Matematica</td>
-                    <td>2do Grado</td>
+                    <td><img src="../Imagenes/libro-abierto.png" width="32" height="32" class="rounded-circle my-n1" alt="Avatar"></td>
+                    <td>Literatura</td>
+                    <td>Grado</td>
                     <td><div class="progress" style="height: 3px;">
                       <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>25%</td>
-                    <td> <div class="btn custom-btn vertical">
-                        ...
-                    </div></td>
+                    <td><button type="button" class="btn btn-primary btn-sm">Registrar</button></td>
                   </tr>
                   <tr>
-                    <td><img src="../Imagenes/mate.jpg" width="32" height="32" class="rounded-circle my-n1" alt="Avatar"></td>
-                    <td>Matematica</td>
-                    <td>1er Grado</td>
+                    <td><img src="../Imagenes/fisiscas.jpg" width="32" height="32" class="rounded-circle my-n1" alt="Avatar"></td>
+                    <td>Fisica</td>
+                    <td>Grado</td>
                     <td><div class="progress" style="height: 3px;">
                       <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>25%</td>
-                    <td> <div class="btn custom-btn vertical">
-                        ...
-                    </div></td>
+                    <td><button type="button" class="btn btn-primary btn-sm">Registrar</button></td>
+                  </tr>
+                  <tr>
+                    <td><img src="../Imagenes/historia.jpg" width="32" height="32" class="rounded-circle my-n1" alt="Avatar"></td>
+                    <td>Historia</td>
+                    <td>Grado</td>
+                    <td><div class="progress" style="height: 3px;">
+                      <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>25%</td>
+                    <td><button type="button" class="btn btn-primary btn-sm">Registrar</button></td>
+                  </tr>
+                  <tr>
+                    <td><img src="../Imagenes/musica.jpg" width="32" height="32" class="rounded-circle my-n1" alt="Avatar"></td>
+                    <td>Musica y Artes</td>
+                    <td>Grado</td>
+                    <td><div class="progress" style="height: 3px;">
+                      <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>25%</td>
+                    <td><button type="button" class="btn btn-primary btn-sm">Registrar</button></td>
+                  </tr>
+                  <tr>
+                    <td><img src="../Imagenes/ingless.webp" width="32" height="32" class="rounded-circle my-n1" alt="Avatar"></td>
+                    <td>Ingles</td>
+                    <td>Grado</td>
+                    <td><div class="progress" style="height: 3px;">
+                      <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>25%</td>
+                    <td><button type="button" class="btn btn-primary btn-sm">Registrar</button></td>
+                  </tr>
+                  <tr>
+                    <td><img src="../Imagenes/geografia.jpg" width="32" height="32" class="rounded-circle my-n1" alt="Avatar"></td>
+                    <td>Geografia</td>
+                    <td>Grado</td>
+                    <td><div class="progress" style="height: 3px;">
+                      <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>25%</td>
+                    <td><button type="button" class="btn btn-primary btn-sm">Registrar</button></td>
+                  </tr>
+                  <tr>
+                    <td><img src="../Imagenes/cultura General.jpg" width="32" height="32" class="rounded-circle my-n1" alt="Avatar"></td>
+                    <td>Cultura General</td>
+                    <td>Grado   </td>
+                    <td><div class="progress" style="height: 3px;">
+                      <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>25%</td>
+                    <td><button type="button" class="btn btn-primary btn-sm">Registrar</button></td>
                   </tr>
                   
                 </tbody>
@@ -207,7 +209,7 @@
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <script src="..\0. SideBar\sidebar.js"></script>
+    <script src="assets/js/sidebar.js"></script>
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--

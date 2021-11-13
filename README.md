@@ -1,6 +1,7 @@
 # SACNS (Sistema de Seguimiento Académico de un Colegio de Nivel Secundario)
 
-## Indicaciones estructura de directorios
+## Indicaciones estructura de directorios y archivos ( Las vistas estarán en la raíz del proyecto )
+> Realizar la inserción de nuevos archivos tal y como se especifica para llevar un orden de trabajo.
 
 * assets: archivos estáticos de front
     * css: archivo main.css para personalización de estilos
