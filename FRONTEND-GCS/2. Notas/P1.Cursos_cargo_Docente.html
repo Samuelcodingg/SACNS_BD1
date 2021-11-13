@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title> Cursos a cargo - Docente</title>
+  <link rel="shortcut icon" href="..\Imagenes\logo.png" type="image/x-icon">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="P1.Curos_cargo_Docente.css" rel="stylesheet">
+    <link rel="stylesheet" href="..\0. SideBar\sidebar.css">
+    <style type="text/css">
+      .btn {
+          display       : inline-block;
+          font-size     : 1rem;
+          padding       : .0.5rem;
+      }
+      .btn:hover {
+          cursor: pointer;
+      }
+      .custom-btn {
+          font-family : monospace;
+          margin      : 0.5rem;
+          padding-top : .0.5rem;
+      }
+      .vertical {
+          transform: rotate(-90deg);
+      }
+  </style>
+</head>
+  <body>
+    <div class="sidebar">
+      <div class="logo-details">
+          <div id="logoprin" class='bx bxs-graduation icon' color="blue"></div>
+          <div class="logo_name">E. SAN MARCOS</div>
+          <i class='bx bx-menu' id="btn"></i>
+      </div>
+      <ul class="nav-list d-none" id="nav-list">
+          <li>
+              <a href="#" onclick="">
+                  <i class='bx bx-building-house'></i>
+                  <span class="links_name">Principal</span>
+              </a>
+              <span class="tooltip">Principal</span>
+          </li>
+          <li>
+              <a href="#">
+                  <i class='bx bx-notepad'></i>
+                  <span class="links_name">Ingreso de Notas</span>
+              </a>
+              <span class="tooltip">Notas</span>
+          </li>
+          <li>
+              <a href="#">
+                  <i class='bx bxs-x-square'></i>
+                  <span class="links_name">Registro de Faltas</span>
+              </a>
+              <span class="tooltip">Faltas</span>
+          </li>
+          <li>
+              <a href="#">
+                  <i class='bx bx-file-find'></i>
+                  <span class="links_name">Generar Observaciones</span>
+              </a>
+              <span class="tooltip">Observaciones</span>
+          </li>
+          <div id="hogar">
+              <p>Tu cuenta</p>
+          </div>
+          <li>
+              <a href="#">
+                  <i class='bx bxs-wrench'></i>
+                  <span class="links_name">Editar</span>
+              </a>
+              <span class="tooltip">Editar</span>
+          </li>
+          <li>
+              <a href="#">
+                  <i class='bx bx-exit'></i>
+                  <span class="links_name">Salir</span>
+              </a>
+              <span class="tooltip">Salir</span>
+          </li>
+          <div id="hogar2">
+              <p>Documentación</p>
+          </div>
+          <li>
+              <a href="#">
+                  <i class='bx bx-help-circle'></i>
+                  <span class="links_name">Ayuda</span>
+              </a>
+              <span class="tooltip">Ayuda</span>
+          </li>
+      </ul>
+  </div>
+   
+    <div class="container mt-5 ml-5 p-5">
+      <div class="container-fluid p-0">
+      <h1 class="h3">Cursos</h1>
+      <div class="row">
+        <div class="col-xl-8">
+          <div class="card">
+            <div class="card-header pb-0">
+              <div class="card-actions float-right">
+                
+              </div>
+              <h4 class="subtext">Grado :</h4>
+
+              <h6 class="sub2"><img src="..\Imagenes/chack.png" width="30" height="30" class="rounded-circle my-n1" alt="Avatar"> Numero de Cursos</h6>
+            </div>
+            <div class="card-body">
+              <table class="table table-striped" style="width:100%" style="height:100;">
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>Curso</th>
+                    <th>Grado</th>
+                    <th>Estado</th>
+                    <th> </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr id="lol">
+                    <td><img src="..\Imagenes/mate.jpg" width="32" height="32" class="rounded-circle my-n1" alt="Avatar"></td>
+                    <td>Matematica</td>
+                    <td>6to Grado</td>
+                    <td><div class="progress" style="height: 3px;">
+                      <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>25%</td>
+                    <td> <div class="btn custom-btn vertical">
+                      ...
+                  </div></td>
+                  </tr>
+                  <tr>
+                    <td><img src="..\Imagenes/mate.jpg" width="32" height="32" class="rounded-circle my-n1" alt="Avatar"></td>
+                    <td>Matematica</td>
+                    <td>5to Grado</td>
+                    <td><div class="progress" style="height: 3px;">
+                      <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>25%</td>
+                    <td> <div class="btn custom-btn vertical">
+                      ...
+                  </div></td>
+                  </tr>
+                  <tr>
+                    <td><img src="..\Imagenes/mate.jpg" width="32" height="32" class="rounded-circle my-n1" alt="Avatar"></td>
+                    <td>Matematica</td>
+                    <td>4to Grado</td>
+                    <td><div class="progress" style="height: 3px;">
+                      <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>25%</td>
+                    <td> <div class="btn custom-btn vertical">
+                      ...
+                  </div></td>
+                  </tr>
+                  <tr>
+                    <td><img src="..\Imagenes/mate.jpg" width="32" height="32" class="rounded-circle my-n1" alt="Avatar"></td>
+                    <td>Matematica</td>
+                    <td>3to Grado</td>
+                    <td><div class="progress" style="height: 3px;">
+                      <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>25%</td>
+                    <td> <div class="btn custom-btn vertical">
+                      ...
+                  </div></td>
+                  </tr>
+                  <tr>
+                    <td><img src="..\Imagenes/mate.jpg" width="32" height="32" class="rounded-circle my-n1" alt="Avatar"></td>
+                    <td>Matematica</td>
+                    <td>2do Grado</td>
+                    <td><div class="progress" style="height: 3px;">
+                      <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>25%</td>
+                    <td> <div class="btn custom-btn vertical">
+                      ...
+                  </div></td>
+                  </tr>
+                  <tr>
+                    <td><img src="..\Imagenes/mate.jpg" width="32" height="32" class="rounded-circle my-n1" alt="Avatar"></td>
+                    <td>Matematica</td>
+                    <td>1er Grado</td>
+                    <td><div class="progress" style="height: 3px;">
+                      <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>25%</td>
+                    <td> <div class="btn custom-btn vertical">
+                      ...
+                  </div></td>
+                  </tr>
+                  
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+  
+        
+      </div>
+  
+    </div>
+  </div>
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="..\0. SideBar\sidebar.js"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
