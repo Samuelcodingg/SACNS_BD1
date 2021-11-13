@@ -9,8 +9,8 @@
   <link rel="shortcut icon" href="..\Imagenes\logo.png" type="image/x-icon">
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link href="P1.Curos_cargo_Docente.css" rel="stylesheet">
-    <link rel="stylesheet" href="..\0. SideBar\sidebar.css">
+    <link href="assets/css/cursos_cargo.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/sidebar.css">
     <style type="text/css">
       .btn {
           display       : inline-block;
@@ -108,7 +108,7 @@
               </div>
               <h4 class="subtext">Grado :</h4>
 
-              <h6 class="sub2"><img src="..\Imagenes/chack.png" width="30" height="30" class="rounded-circle my-n1" alt="Avatar"> Numero de Cursos</h6>
+              <h6 class="sub2"><img src="assets/img/chack.png" width="30" height="30" class="rounded-circle my-n1" alt="Avatar"> Numero de Cursos</h6>
             </div>
             <div class="card-body">
               <table class="table table-striped" style="width:100%" style="height:100;">
@@ -123,7 +123,7 @@
                 </thead>
                 <tbody>
                   <tr id="lol">
-                    <td><img src="..\Imagenes/mate.jpg" width="32" height="32" class="rounded-circle my-n1" alt="Avatar"></td>
+                    <td><img src="assets/img/mate.jpg" width="32" height="32" class="rounded-circle my-n1" alt="Avatar"></td>
                     <td>Matematica</td>
                     <td>6to Grado</td>
                     <td><div class="progress" style="height: 3px;">
@@ -134,7 +134,7 @@
                   </div></td>
                   </tr>
                   <tr>
-                    <td><img src="..\Imagenes/mate.jpg" width="32" height="32" class="rounded-circle my-n1" alt="Avatar"></td>
+                    <td><img src="assets/img/mate.jpg" width="32" height="32" class="rounded-circle my-n1" alt="Avatar"></td>
                     <td>Matematica</td>
                     <td>5to Grado</td>
                     <td><div class="progress" style="height: 3px;">
@@ -145,7 +145,7 @@
                   </div></td>
                   </tr>
                   <tr>
-                    <td><img src="..\Imagenes/mate.jpg" width="32" height="32" class="rounded-circle my-n1" alt="Avatar"></td>
+                    <td><img src="assets/img/mate.jpg" width="32" height="32" class="rounded-circle my-n1" alt="Avatar"></td>
                     <td>Matematica</td>
                     <td>4to Grado</td>
                     <td><div class="progress" style="height: 3px;">
@@ -156,7 +156,7 @@
                   </div></td>
                   </tr>
                   <tr>
-                    <td><img src="..\Imagenes/mate.jpg" width="32" height="32" class="rounded-circle my-n1" alt="Avatar"></td>
+                    <td><img src="assets/img/mate.jpg" width="32" height="32" class="rounded-circle my-n1" alt="Avatar"></td>
                     <td>Matematica</td>
                     <td>3to Grado</td>
                     <td><div class="progress" style="height: 3px;">
@@ -167,7 +167,7 @@
                   </div></td>
                   </tr>
                   <tr>
-                    <td><img src="..\Imagenes/mate.jpg" width="32" height="32" class="rounded-circle my-n1" alt="Avatar"></td>
+                    <td><img src="assets/img/mate.jpg" width="32" height="32" class="rounded-circle my-n1" alt="Avatar"></td>
                     <td>Matematica</td>
                     <td>2do Grado</td>
                     <td><div class="progress" style="height: 3px;">
@@ -178,7 +178,7 @@
                   </div></td>
                   </tr>
                   <tr>
-                    <td><img src="..\Imagenes/mate.jpg" width="32" height="32" class="rounded-circle my-n1" alt="Avatar"></td>
+                    <td><img src="assets/img/mate.jpg" width="32" height="32" class="rounded-circle my-n1" alt="Avatar"></td>
                     <td>Matematica</td>
                     <td>1er Grado</td>
                     <td><div class="progress" style="height: 3px;">
@@ -206,7 +206,7 @@
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <script src="..\0. SideBar\sidebar.js"></script>
+    <script src="assets/js/sidebar.js"></script>
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--
