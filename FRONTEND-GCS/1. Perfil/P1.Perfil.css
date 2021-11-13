@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@1&display=swap');
+*{
+  margin:0;
+  box-sizing: border-box;
+  font-family: 'DM Serif Text', serif;
+  background-color: #F8F9FA;
+}
+
+.contenedor{
+    margin-left: 50px;
+    padding: 2em;
+    
+}
+
+.contenedor .main-body {
+    background: #a8ff78;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #78ffd6, #a8ff78);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #78ffd6, #a8ff78); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border-radius: 0.7em;
+    border-color: #7affd721;
+    height: 250px;
+    width: 100%;
+    position: relative;
+    padding: 0.5em;
+    grid-template: min-content;
+}
+
+.main-body .perfil{
+    top: 180px;
+    margin-top:20px; 
+    margin-left: 5px;
+    height: 141px;
+    width: 99%;
+    position: relative;
+    border-radius: 0.7em;
+    border-color: #fff;
+    display: flex;
+    flex-direction: row;
+    background-color: hsla(0, 0%, 100%, 0.61);
+    gap: 2px
+    
+    
+}
+
+.main-body .perfil #perfil{
+    flex-grow: 0.1;
+    margin: 20px 14px;
+    position: relative; 
+    max-width: 120px;
+    max-height: 150px;
+    border-radius: 0.7em;
+}
+
+.main-body .perfil .texto{
+    margin-top: 25px;
+    flex-grow: 4;
+    position: relative;
+    height: fit-content;
+    background: none;
+    padding: 1em;
+}
+.texto h2 {
+    font-weight: normal;
+    font-size: 25px;
+    color: #2D3748;
+    background: none;
+    position: relative;
+    
+}
+
+.texto h3 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 140%;
+    text-decoration-line: underline;
+    color: #718096;
+    background: none;
+    position: relative;
+}
+.perfil .btn {
+    background: none; /* Blue background */
+    border: white; /* Remove borders */
+    border-radius: 12px;
+    color: #2D3748;
+    font-size: 20px; /* Set a font size */
+    justify-content: flex-end;
+    padding: 0px 8px;  
+    flex-grow: 0.2;
+    margin: 40px 14px;
+    position: relative;
+}
+.perfil .btn:hover{
+    background-color: white;
+    box-shadow: 0px 2px 5.5px rgba(0, 0, 0, 0.06);
+}
+.btn1{
+    background: #ffffffaf;
+    color: #2D3748;
+    border: #fff;
+    border-radius: 12px;
+    margin-bottom: 5px;
+    display: none;
+}
+.btn1:hover{
+    font-size: large;
+}
+.datosper{
+    margin-top: 100px;
+    height: 500px;
+    width: 94%;
+    margin-left: 3.5em;
+    padding-left: 15px;
+}
+.bio-desk{
+    position: relative;
+    width: 50%;
+}
+.bio-desk h4 {
+    font-size: 36px;
+    font-weight: 800;
+    line-height: 50,4px;
+    color: #2D3748;
+}
+
+.panel{
+    border: 1px #fff;
+    border-radius: 20px;
+    padding: 20px;
+    background: #FFF;
+    margin-bottom: 20px;
+    margin: 10px;
+    height: 100%;
+    overflow: auto;
+}
+
+.panel p {
+    padding-left: 20px;
+    font-weight: 550;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    background-color: #fff;
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #718096;
+
+}
+
+.datosper .row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    position: relative;
+    justify-content: flex-start;
+    height: 100%;
+
+}
+.red, .terques{
+    background: none;
+    margin-bottom: 30px;
+    font-size: 25px;
+    text-align: center;
+    color: #2D3748;
+
+}
+
+@media (max-width: 992px) {
+    .contenedor {
+        margin-left: 0px;
+        margin-top: 30px;
+    }
+    .datosper{
+        margin-left: 1.6em;
+    }
+}
+@media screen and (max-width: 700px) {
+    .btn1{
+        display: block;
+    }
+    .main-body .perfil{
+        height: 120px;
+        top: 90px;
+    }
+    .main-body #perfil{
+        height: 80px;
+        width: 65px;
+    }
+    .perfil .btn{
+        display: none;
+    }
+    .btn1{
+        display: block;
+    }
+    .main-body .perfil .texto {
+        margin-top: 15px;
+        overflow: auto;
+        overflow-wrap:break-word;
+        align-items: center;
+    }
+    .texto h2{
+        font-size: 18px;
+    }
+    .texto h3{
+        font-size: 16px;
+    }
+    .datosper{
+        height: 700px;
+        margin: 35px;
+        margin-left: 0.6em;
+    }
+    .bio-desk{
+        width: 100%;
+        height: 44%;
+        margin:0;
+        margin-right: 3.5em;
+    }
+    .panel{
+        overflow: auto;
+        overflow-wrap: break-word;
+    }
+    .datosper .row{
+        flex-direction: row;
+    }
+
+
+}
+
+@media screen and (max-width: 320px){
+
+    .texto h2{
+        margin-top: 7px;
+        font-size: 14px;
+    }
+    .texto h3{
+        font-size: 12px;
+    }
+}
