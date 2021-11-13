@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
+
+
+#datos{
+    background-color:rgba(0,0,0,.03);
+    font-style: italic;
+    border: none;
+    border-radius: 12px;
+}
+#btn3{
+    font-family: 'DM Serif Text', serif;
+    background: #4FD1C5;
+    color: #fff;
+    padding: 0.6em;
+    border: none;
+    font-size: 20px;
+    border-radius: 12px;
+    align-self: center;
+}
