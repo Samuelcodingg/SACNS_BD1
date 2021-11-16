@@ -17,6 +17,7 @@
 </head>
 
 <body>
+    <?php require_once('src/info_perfil_docente.php') ?>
     <?php require_once('includes/sidebar_docente.php') ?>
     <div>
         <div class="contenedor">
@@ -24,13 +25,13 @@
                 <button class="btn1"><i class='bx bxs-user-pin'></i></button>
                 <button class="btn1"><i class='bx bxs-wrench'></i> </button>
                 <div class="perfil">
-                    <img src="..\Imagenes\profile.jpg" alt="" id="perfil">
+                    <img src="assets/img/admin_prueba.png" alt="" id="perfil">
                     <div class="texto">
-                        <h2>Esthera Thompson</h2>
-                        <h3>ejemplo@hotmail.com</h3>
+                        <h2> <?php echo $_SESSION['datos_usuario']['nombres'].' '.$_SESSION['datos_usuario']['apellidos'] ?> </h2>
+                        <h3> <?php echo $_SESSION['datos_usuario']['email'] ?> </h3>
                     </div>
-                    <button class="btn"><i class='bx bxs-user-pin'></i> General</button>
-                    <button class="btn"><i class='bx bxs-wrench'></i> Editar</button>
+                    <a href="perfil_docente.php" class="btn d-flex align-items-center"><i class='bx bxs-user-pin'></i> General  </a>
+                    <a href="editar_perfil_docente.php" class="btn d-flex align-items-center"><i class='bx bxs-wrench'></i> Editar</a>
                 </div>
             </div>
         </div>
@@ -39,21 +40,21 @@
                 <div class="bio-desk">
                     <div class="panel">
                         <h4 class="red">Información Personal</h4>
-                        <p>Nombre Completo:</p>
-                        <p>Edad:</p>
-                        <p>Teléfono:</p>
-                        <p>Correo electronico:</p>
-                        <p>Dirección:</p>
-                        <p>DNI:</p>
-                        <p>Tipo de Usuario:</p>
+                        <p>Nombre Completo: <?php echo $_SESSION['datos_usuario']['nombres'].' '.$_SESSION['datos_usuario']['apellidos'] ?> </p>
+                        <p>Edad: <?php echo $_SESSION['datos_usuario']['edad'] ?> </p>
+                        <p>Teléfono: <?php echo $_SESSION['datos_usuario']['celular'] ?> </p>
+                        <p>Correo electronico: <?php echo $_SESSION['datos_usuario']['email'] ?> </p>
+                        <p>Dirección:  <?php echo $_SESSION['datos_usuario']['direccion'] ?> </p>
+                        <p>DNI: <?php echo $_SESSION['datos_usuario']['dni'] ?> </p>
+                        <p>Tipo de Usuario: Docente</p>
                     </div>
                 </div>
                 <div class="bio-desk">
                     <div class="panel">
                         <h4 class="terques">Datos Academicos </h4>
-                        <p>Código: </p>
-                        <p>Correo Institucional:</p>
-                        <p>Especialidad:</p>
+                        <p>Código: <?php echo $_SESSION['datos_usuario']['docente_id'] ?> </p>
+                        <p>Correo Institucional: <?php echo $_SESSION['datos_usuario']['correo_insti'] ?> </p>
+                        <p>Especialidad: <?php echo $_SESSION['datos_usuario']['especialidad'] ?> </p>
                     </div>
                 </div>
             </div>

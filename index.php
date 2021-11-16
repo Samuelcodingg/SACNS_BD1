@@ -15,8 +15,8 @@
             if($_SESSION['role'] == 'padre'){
                 echo "Bienvenido padre ".$_SESSION['datos_usuario']['nombres'];
             }
-            else if($_SESSION['role'] == 'alumno'){
-                echo "Bienvenido alumno ".$_SESSION['datos_usuario']['nombres'];
+            else if($_SESSION['role'] == 'docente'){
+                header('Location: perfil_docente.php');
             }
             else if($_SESSION['role']=='administrador'){
                 header('Location: admin_principal.php');

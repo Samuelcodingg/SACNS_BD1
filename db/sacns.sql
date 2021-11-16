@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1:3306
--- Tiempo de generación: 12-11-2021 a las 18:55:58
+-- Tiempo de generación: 16-11-2021 a las 01:33:37
 -- Versión del servidor: 5.7.31
 -- Versión de PHP: 7.3.21
 
@@ -144,6 +144,10 @@ CREATE TABLE IF NOT EXISTS `docente` (
   `email` varchar(100) COLLATE utf16_spanish_ci NOT NULL,
   `celular` int(11) NOT NULL,
   `especialidad` varchar(200) COLLATE utf16_spanish_ci NOT NULL,
+  `edad` int(3) NOT NULL,
+  `direccion` varchar(100) COLLATE utf16_spanish_ci NOT NULL,
+  `dni` int(8) NOT NULL,
+  `correo_insti` varchar(50) COLLATE utf16_spanish_ci NOT NULL,
   PRIMARY KEY (`docente_id`),
   UNIQUE KEY `usuario_2` (`usuario`),
   KEY `FK_ASIGNATURA` (`asignatura_id`),
@@ -154,9 +158,9 @@ CREATE TABLE IF NOT EXISTS `docente` (
 -- Volcado de datos para la tabla `docente`
 --
 
-INSERT INTO `docente` (`docente_id`, `usuario`, `contrasenia`, `nombres`, `apellidos`, `asignatura_id`, `email`, `celular`, `especialidad`) VALUES
-(1, 'Cortez', 'cortez123', 'Augusto', 'Cortez', 1, 'cortez@gmail.com', 953662012, 'Nada.'),
-(2, 'Paolo123', 'paolo123', 'Paolo', 'Guerrero', 2, 'paolo@fpf.com', 954125874, 'Deportista');
+INSERT INTO `docente` (`docente_id`, `usuario`, `contrasenia`, `nombres`, `apellidos`, `asignatura_id`, `email`, `celular`, `especialidad`, `edad`, `direccion`, `dni`, `correo_insti`) VALUES
+(1, 'Cortez', 'cortez123', 'Augusto', 'Cortez', 1, 'cortez@gmail.com', 953662012, 'Nada.', 55, 'el infierno 666', 74512369, 'cortez@unmsm.edu.pe'),
+(2, 'Paolo123', 'paolo123', 'Paolo', 'Guerrero', 2, 'paolo@fpf.com', 954125874, 'Deportista', 0, '', 0, '');
 
 -- --------------------------------------------------------
 
@@ -276,6 +280,7 @@ INSERT INTO `padre` (`padre_id`, `usuario`, `contrasenia`, `nombres`, `apellidos
 (6, 'vivian123', 'vivian123', 'Vivian', 'Lazaro', 6, 'vivian@gmail.com', 987412536),
 (7, 'kevin', 'kevin123', 'Kevin', 'Ramos', 7, 'kevin@gmail.com', 987412369),
 (8, 'Aaron', 'aaron123', 'Aarón', 'Céspedes', 8, 'aaron@gmail.com', 987111222),
+(9, 'Jose1323', 'jose123', 'Jose', 'Lopez', 9, 'jose@jose.com', 954777888),
 (1235, 'padre1', 'prueba1', 'adr', 'bal', 2, 'as', 934590972);
 
 --

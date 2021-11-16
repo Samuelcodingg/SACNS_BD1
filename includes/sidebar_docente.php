@@ -6,28 +6,28 @@
         </div>
         <ul class="nav-list d-none" id="nav-list">
             <li>
-                <a href="#" onclick="">
+                <a href="perfil_docente.php" onclick="">
                     <i class='bx bx-building-house'></i>
                     <span class="links_name">Principal</span>
                 </a>
                 <span class="tooltip">Principal</span>
             </li>
             <li>
-                <a href="#">
+                <a href="cursos_cargos_docente.php">
                     <i class='bx bx-notepad'></i>
                     <span class="links_name">Ingreso de Notas</span>
                 </a>
                 <span class="tooltip">Notas</span>
             </li>
             <li>
-                <a href="#">
+                <a href="asistencia.php">
                     <i class='bx bxs-x-square'></i>
                     <span class="links_name">Registro de Faltas</span>
                 </a>
                 <span class="tooltip">Faltas</span>
             </li>
             <li>
-                <a href="#">
+                <a href="observaciones.php">
                     <i class='bx bx-file-find'></i>
                     <span class="links_name">Generar Observaciones</span>
                 </a>
@@ -37,14 +37,14 @@
                 <p>Tu cuenta</p>
             </div>
             <li>
-                <a href="#">
+                <a href="editar_perfil_docente.php">
                     <i class='bx bxs-wrench'></i>
                     <span class="links_name">Editar</span>
                 </a>
                 <span class="tooltip">Editar</span>
             </li>
             <li>
-                <a href="#">
+                <a href="src/cerrar_sesion.php">
                     <i class='bx bx-exit'></i>
                     <span class="links_name">Salir</span>
                 </a>
