@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Perfil</title>
-    <link rel="shortcut icon" href="../Imagenes/logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon">
     <!-- <link rel="stylesheet" href="/path/to/cdn/bootstrap.min.css" /> -->
 
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>

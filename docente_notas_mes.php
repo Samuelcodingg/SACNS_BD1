@@ -14,7 +14,7 @@
     
         <link rel="stylesheet" href="assets/css/sidebar.css">
     <link href="assets/css/docente_notas.css" rel="stylesheet">
-
+    <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 
