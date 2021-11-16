@@ -30,8 +30,8 @@
                         </div>
                         <div class="col d-flex flex-column flex-sm-row justify-content-between mb-3">
                           <div class="text-center text-sm-left mb-2 mb-sm-0">
-                            <h4 class="pt-sm-2 pb-1 mb-0 text-nowrap">John Smith</h4>
-                            <p class="mb-0">nombre@ejemplo.com</p>
+                            <h4 class="pt-sm-2 pb-1 mb-0 text-nowrap"> <?php echo $_SESSION['datos_usuario']['nombres'].' '.$_SESSION['datos_usuario']['apellidos'] ?> </h4>
+                            <p class="mb-0"> <?php echo $_SESSION['datos_usuario']['email'] ?> </p>
                             <div class="mt-2">
                               <button class="btn btn-primary" type="button">
                                 <i class="fa fa-fw fa-camera"></i>
@@ -46,20 +46,20 @@
                       </ul>
                       <div class="tab-content pt-3">
                         <div class="tab-pane active">
-                          <form class="form" novalidate="">
+                          <form class="form" novalidate="" method="POST" action="src/editar_docente.php">
                             <div class="row">
                               <div class="col">
                                 <div class="row">
                                   <div class="col">
                                     <div class="form-group">
                                       <label>Nombre: </label>
-                                      <input class="form-control" type="text" name="name" placeholder="John Smith" value="John Smith">
+                                      <input class="form-control" type="text" name="name" disabled value="<?php echo $_SESSION['datos_usuario']['nombres'].' '.$_SESSION['datos_usuario']['apellidos'] ?>">
                                     </div>
                                   </div>
                                   <div class="col">
                                     <div class="form-group">
                                       <label>Teléfono</label>
-                                      <input class="form-control" type="number" name="username" placeholder="***-***-***" value="***-***-***">
+                                      <input class="form-control" type="number" name="celular" placeholder="***-***-***" value="<?php echo $_SESSION['datos_usuario']['celular']?>">
                                     </div>
                                   </div>
                                 </div>
@@ -67,7 +67,7 @@
                                   <div class="col">
                                     <div class="form-group">
                                       <label>Correo:</label>
-                                      <input class="form-control" type="text" placeholder="user@example.com">
+                                      <input class="form-control" type="text" name="email"  placeholder="user@example.com" value="<?php echo $_SESSION['datos_usuario']['email'] ?>" >
                                     </div>
                                   </div>
                                 </div>
@@ -75,7 +75,7 @@
                                     <div class="col">
                                       <div class="form-group">
                                         <label>Dirección:</label>
-                                        <input class="form-control" type="text" placeholder="Los Olivos -Comas">
+                                        <input class="form-control" type="text" name="direccion" placeholder="Los Olivos - Comas" value="<?php echo $_SESSION['datos_usuario']['direccion'] ?>" >
                                       </div>
                                     </div>
                                   </div>
@@ -96,7 +96,7 @@
                                   <div class="col">
                                     <div class="form-group">
                                       <label>Nueva Contraseña</label>
-                                      <input class="form-control" type="password" placeholder="••••••">
+                                      <input class="form-control" name="contrasenia" type="password" placeholder="••••••">
                                     </div>
                                   </div>
                                 </div>
