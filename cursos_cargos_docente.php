@@ -35,7 +35,7 @@
    
     <div class="container mt-5 ml-5 p-5">
       <div class="container-fluid p-0">
-      <h1 class="h3">Cursos</h1>
+      <h1 class="h3">Cursos a Cargo</h1>
       <div class="row">
         <div class="col-xl-8">
           <div class="card">
@@ -43,9 +43,8 @@
               <div class="card-actions float-right">
                 
               </div>
-              <h4 class="subtext">Grado :</h4>
 
-              <h6 class="sub2"><img src="assets/img/chack.png" width="30" height="30" class="rounded-circle my-n1" alt="Avatar"> Numero de Cursos</h6>
+              <h6 class="sub2"><img src="assets/img/chack.png" width="30" height="30" class="rounded-circle my-n1" alt="Avatar"> Numero de Cursos: 5</h6>
             </div>
             <div class="card-body">
               <table class="table table-striped" style="width:100%" style="height:100;">
@@ -59,73 +58,26 @@
                   </tr>
                 </thead>
                 <tbody>
+
+                  <?php 
+                    for($i=0; $i<5; $i++){
+
+                      ?>
                   <tr id="lol">
-                    <td><img src="assets/img/mate.jpg" width="32" height="32" class="rounded-circle my-n1" alt="Avatar"></td>
-                    <td>Matematica</td>
-                    <td>6to Grado</td>
-                    <td><div class="progress" style="height: 3px;">
-                      <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>25%</td>
-                    <td> <div class="btn custom-btn vertical">
-                      ...
-                  </div></td>
+                      <td><img src="assets/img/<?php echo $_SESSION['datos_usuario']['especialidad'] ?>.png" width="32" height="32" class="rounded-circle my-n1" alt="Avatar"></td>
+                      <td> <?php echo $_SESSION['datos_usuario']['especialidad'] ?> </td>
+                      <td><?php echo ($i+1) ?> Año</td>
+                      <td><div class="progress" style="height: 3px;">
+                        <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>25%</td>
+                      <td> <div class="btn custom-btn vertical">
+                        ...
+                      </div></td>
                   </tr>
-                  <tr>
-                    <td><img src="assets/img/mate.jpg" width="32" height="32" class="rounded-circle my-n1" alt="Avatar"></td>
-                    <td>Matematica</td>
-                    <td>5to Grado</td>
-                    <td><div class="progress" style="height: 3px;">
-                      <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>25%</td>
-                    <td> <div class="btn custom-btn vertical">
-                      ...
-                  </div></td>
-                  </tr>
-                  <tr>
-                    <td><img src="assets/img/mate.jpg" width="32" height="32" class="rounded-circle my-n1" alt="Avatar"></td>
-                    <td>Matematica</td>
-                    <td>4to Grado</td>
-                    <td><div class="progress" style="height: 3px;">
-                      <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>25%</td>
-                    <td> <div class="btn custom-btn vertical">
-                      ...
-                  </div></td>
-                  </tr>
-                  <tr>
-                    <td><img src="assets/img/mate.jpg" width="32" height="32" class="rounded-circle my-n1" alt="Avatar"></td>
-                    <td>Matematica</td>
-                    <td>3to Grado</td>
-                    <td><div class="progress" style="height: 3px;">
-                      <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>25%</td>
-                    <td> <div class="btn custom-btn vertical">
-                      ...
-                  </div></td>
-                  </tr>
-                  <tr>
-                    <td><img src="assets/img/mate.jpg" width="32" height="32" class="rounded-circle my-n1" alt="Avatar"></td>
-                    <td>Matematica</td>
-                    <td>2do Grado</td>
-                    <td><div class="progress" style="height: 3px;">
-                      <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>25%</td>
-                    <td> <div class="btn custom-btn vertical">
-                      ...
-                  </div></td>
-                  </tr>
-                  <tr>
-                    <td><img src="assets/img/mate.jpg" width="32" height="32" class="rounded-circle my-n1" alt="Avatar"></td>
-                    <td>Matematica</td>
-                    <td>1er Grado</td>
-                    <td><div class="progress" style="height: 3px;">
-                      <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>25%</td>
-                    <td> <div class="btn custom-btn vertical">
-                      ...
-                  </div></td>
-                  </tr>
-                  
+                    
+                      <?php
+                    }
+                  ?>
                 </tbody>
               </table>
             </div>

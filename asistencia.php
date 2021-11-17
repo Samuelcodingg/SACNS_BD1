@@ -23,8 +23,7 @@
         <div class="col-xl-8">
           <div class="card">
             <div class="card-header pb-0">
-              <h4 class="subtext">Grado :</h4>
-              <h6 class="sub2"><img src="../Imagenes/chack.png" width="30" height="30" class="rounded-circle my-n1" alt="Avatar"> Numero de Cursos</h6>
+              <h6 class="sub2"><img src="assets/img/chack.png" width="30" height="30" class="rounded-circle my-n1" alt="Avatar"> Numero de Cursos</h6>
             </div>
             <div class="card-body">
               <table class="table table-striped" style="width:100%" style="height:100;">
@@ -38,97 +37,24 @@
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td><img src="../Imagenes/mate.jpg" width="32" height="32" class="rounded-circle my-n1" alt="Avatar"></td>
-                    <td>Matematica</td>
-                    <td>Grado</td>
-                    <td><div class="progress" style="height: 3px;">
-                      <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>25%</td>
-                    <td><button type="button" class="btn btn-primary btn-sm">Registrar</button></td>
-                  </tr>
-                  <tr>
-                    <td><img src="../Imagenes/lengu.png" width="32" height="32" class="rounded-circle my-n1" alt="Avatar"></td>
-                    <td>Lenguaje</td>
-                    <td>Grado</td>
-                    <td><div class="progress" style="height: 3px;">
-                      <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>25%</td>
-                    <td><button type="button" class="btn btn-primary btn-sm">Registrar</button></td>
-                  </tr>
-                  <tr>
-                    <td><img src="../Imagenes/quimica.jpg" width="32" height="32" class="rounded-circle my-n1" alt="Avatar"></td>
-                    <td> Quimica </td>
-                    <td>Grado</td>
-                    <td><div class="progress" style="height: 3px;">
-                      <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>25%</td>
-                    <td><button type="button" class="btn btn-primary btn-sm">Registrar</button></td>
-                  </tr>
-                  <tr>
-                    <td><img src="../Imagenes/libro-abierto.png" width="32" height="32" class="rounded-circle my-n1" alt="Avatar"></td>
-                    <td>Literatura</td>
-                    <td>Grado</td>
-                    <td><div class="progress" style="height: 3px;">
-                      <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>25%</td>
-                    <td><button type="button" class="btn btn-primary btn-sm">Registrar</button></td>
-                  </tr>
-                  <tr>
-                    <td><img src="../Imagenes/fisiscas.jpg" width="32" height="32" class="rounded-circle my-n1" alt="Avatar"></td>
-                    <td>Fisica</td>
-                    <td>Grado</td>
-                    <td><div class="progress" style="height: 3px;">
-                      <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>25%</td>
-                    <td><button type="button" class="btn btn-primary btn-sm">Registrar</button></td>
-                  </tr>
-                  <tr>
-                    <td><img src="../Imagenes/historia.jpg" width="32" height="32" class="rounded-circle my-n1" alt="Avatar"></td>
-                    <td>Historia</td>
-                    <td>Grado</td>
-                    <td><div class="progress" style="height: 3px;">
-                      <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>25%</td>
-                    <td><button type="button" class="btn btn-primary btn-sm">Registrar</button></td>
-                  </tr>
-                  <tr>
-                    <td><img src="../Imagenes/musica.jpg" width="32" height="32" class="rounded-circle my-n1" alt="Avatar"></td>
-                    <td>Musica y Artes</td>
-                    <td>Grado</td>
-                    <td><div class="progress" style="height: 3px;">
-                      <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>25%</td>
-                    <td><button type="button" class="btn btn-primary btn-sm">Registrar</button></td>
-                  </tr>
-                  <tr>
-                    <td><img src="../Imagenes/ingless.webp" width="32" height="32" class="rounded-circle my-n1" alt="Avatar"></td>
-                    <td>Ingles</td>
-                    <td>Grado</td>
-                    <td><div class="progress" style="height: 3px;">
-                      <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>25%</td>
-                    <td><button type="button" class="btn btn-primary btn-sm">Registrar</button></td>
-                  </tr>
-                  <tr>
-                    <td><img src="../Imagenes/geografia.jpg" width="32" height="32" class="rounded-circle my-n1" alt="Avatar"></td>
-                    <td>Geografia</td>
-                    <td>Grado</td>
-                    <td><div class="progress" style="height: 3px;">
-                      <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>25%</td>
-                    <td><button type="button" class="btn btn-primary btn-sm">Registrar</button></td>
-                  </tr>
-                  <tr>
-                    <td><img src="../Imagenes/cultura General.jpg" width="32" height="32" class="rounded-circle my-n1" alt="Avatar"></td>
-                    <td>Cultura General</td>
-                    <td>Grado   </td>
-                    <td><div class="progress" style="height: 3px;">
-                      <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>25%</td>
-                    <td><button type="button" class="btn btn-primary btn-sm">Registrar</button></td>
-                  </tr>
+                  <?php
+                    for($i=0; $i<5; $i++){
+
+                      ?>
+                      <tr>
+                        <td><img src="assets/img/<?php echo $_SESSION['datos_usuario']['especialidad'] ?>.png" width="32" height="32" class="rounded-circle my-n1" alt="Avatar"></td>
+                        <td><?php echo $_SESSION['datos_usuario']['especialidad'] ?></td>
+                        <td><?php echo ($i+1) ?> Año</td>
+                        <td><div class="progress" style="height: 3px;">
+                          <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>25%</td>
+                        <td><a href="registrar_asistencia.php?" class="btn btn-primary btn-sm">Registrar</a></td>
+                      </tr>
+
+                  <?php
+                    }
                   
+                  ?>
                 </tbody>
               </table>
             </div>
