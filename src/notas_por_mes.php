@@ -16,7 +16,7 @@
         $trimestre = '2';
     } 
     else if($id_mes == 8 || $id_mes == 9 || $id_mes == 10) {
-        $trimestre = '4';
+        $trimestre = '3';
     }
 
     $consulta = "SELECT * FROM asignatura WHERE asignatura_id = $id_curso";
