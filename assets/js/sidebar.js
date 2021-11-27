@@ -21,7 +21,5 @@ function menuBtnChange() {
    document.getElementById('hogar').style.display='none';
    document.getElementById('hogar2').style.display='none';
   document.getElementById('nav-list').classList.add('d-none');
- 
  }
 }
-

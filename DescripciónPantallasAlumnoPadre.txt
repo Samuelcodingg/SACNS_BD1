@@ -1,0 +1,25 @@
+Frontend dem modulo Alumno-Padre de Familia
+- 0. SideBar
+	--> sidebar.css
+	--> sidebar.js
+
+- 1. Perfil
+	--> P1.Perfil.Alumno.css
+	--> P1.Perfil.Alumno.html
+
+- 1.1 Editar Perfil
+	--> P1.Editar.Perfil.Alumno.html
+
+- 2. Notas
+	--> P1.Cursos.Alumno.css
+	--> P1.Cursos.Alumno.html
+	--> P2.Nota.Curso.Alumno.css
+	--> P2.Nota.Curso.Alumno.html
+
+- 3. Asistencia
+	--> P1.Asistencia.Alumno.css
+	--> P1.Asistencia.Alumno.html
+
+- 4. Observaciones
+	--> P1.Observaciones.Alumno.css
+	--> P1.Observaciones.Alumno.html
